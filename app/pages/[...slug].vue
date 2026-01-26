@@ -15,7 +15,3 @@ const { t } = useI18n();
     </div>
   </div>
 </template>
-
-<style scoped>
-  @import './NotFoundPage.scss';
-</style>

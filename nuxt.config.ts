@@ -6,12 +6,19 @@ export default defineNuxtConfig({
   alias: {
     // #shared is automatically aliased by Nuxt to ./shared
   },
-  css: ['~/assets/css/globals.scss'],
+  css: [
+    '~/assets/css/globals.scss',
+  ],
   modules: ['@pinia/nuxt', '@nuxtjs/i18n'],
   i18n: {
-    vueI18n: './i18n.config.ts',
     defaultLocale: 'pl',
-    locales: ['pl']
+    langDir: '../app/assets/translations',
+    locales: [
+      {
+        code: 'pl',
+        file: 'pl.json'
+      }
+    ]
   },
   typescript: {
     tsConfig: {

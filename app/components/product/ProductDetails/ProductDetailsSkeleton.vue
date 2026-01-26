@@ -7,73 +7,73 @@ const { t } = useI18n();
 </script>
 
 <template>
-  <div class="product-card-page">
+  <div class="product-details">
     <div class="container">
       <Breadcrumbs />
-      <button class="product-card-page__back-link">
+      <button class="product-details__back-link">
         {{ t('common.back') }}
       </button>
 
-      <div class="product-card-page__details">
-        <div class="product-card-page__image-section">
+      <div class="product-details__grid">
+        <div class="product-details__image-section">
           <Skeleton height="400px" width="100%" border-radius="8px" />
         </div>
 
-        <div class="product-card-page__info-section">
+        <div class="product-details__info-section">
           <Skeleton
             height="24px"
             width="150px"
-            class="product-card-page__skeleton-mb-2"
+            class="product-details__skeleton-mb-2"
           />
           <Skeleton
             height="48px"
             width="300px"
-            class="product-card-page__skeleton-mb-4"
+            class="product-details__skeleton-mb-4"
           />
 
-          <div class="product-card-page__description-section">
+          <div class="product-details__description-section">
             <Skeleton
               height="28px"
               width="120px"
-              class="product-card-page__skeleton-mb-2"
+              class="product-details__skeleton-mb-2"
             />
             <Skeleton
               height="16px"
               width="100%"
-              class="product-card-page__skeleton-mb-1"
+              class="product-details__skeleton-mb-1"
             />
             <Skeleton
               height="16px"
               width="100%"
-              class="product-card-page__skeleton-mb-1"
+              class="product-details__skeleton-mb-1"
             />
             <Skeleton
               height="16px"
               width="90%"
-              class="product-card-page__skeleton-mb-1"
+              class="product-details__skeleton-mb-1"
             />
             <Skeleton
               height="16px"
               width="95%"
-              class="product-card-page__skeleton-mb-1"
+              class="product-details__skeleton-mb-1"
             />
             <Skeleton
               height="16px"
               width="60%"
-              class="product-card-page__skeleton-mb-1"
+              class="product-details__skeleton-mb-1"
             />
           </div>
 
-          <div class="product-card-page__skeleton-mt-4">
+          <div class="product-details__skeleton-mt-4">
             <Skeleton height="100px" width="100%" border-radius="8px" />
           </div>
 
-          <div class="product-card-page__actions product-card-page__skeleton-mt-4">
+          <div class="product-details__actions product-details__skeleton-mt-4">
             <Skeleton
               height="48px"
               width="180px"
               border-radius="24px"
-              class="product-card-page__skeleton-mr-2"
+              class="product-details__skeleton-mr-2"
             />
           </div>
         </div>
@@ -83,5 +83,5 @@ const { t } = useI18n();
 </template>
 
 <style scoped>
-@import './ProductCardPage.scss';
+@import './ProductDetails.scss';
 </style>

@@ -4,7 +4,7 @@ import PopularProductsSkeleton from '~/components/product/PopularProducts/Popula
 </script>
 
 <template>
-  <div class="home">
+  <div class="home-view-skeleton">
     <MainBanner />
     <PopularProductsSkeleton />
   </div>

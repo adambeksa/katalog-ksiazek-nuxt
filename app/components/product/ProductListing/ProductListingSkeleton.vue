@@ -17,5 +17,5 @@ import ProductFiltersSkeleton from '~/components/product/ProductFilters/ProductF
 </template>
 
 <style scoped>
-@import './ProductListingPage.scss';
+@import './ProductListing.scss';
 </style>

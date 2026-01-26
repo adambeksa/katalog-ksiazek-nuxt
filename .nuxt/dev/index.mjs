@@ -23,7 +23,7 @@ import { readFile } from 'node:fs/promises';
 import consola, { consola as consola$1 } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/consola/dist/index.mjs';
 import { ErrorParser } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/youch-core/build/index.js';
 import { Youch } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/source-map/source-map.js';
+import { SourceMapConsumer } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/nitropack/node_modules/source-map/source-map.js';
 import { createRouterMatcher } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/vue-router/vue-router.node.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { stringify, uneval } from 'file:///home/adambeksa/Dokumenty/projektyRozwojowe/katalog-ksiazek-nuxt/node_modules/devalue/index.js';
@@ -657,7 +657,7 @@ const _inlineRuntimeConfig = {
       "locales": [
         {
           "code": "pl",
-          "language": "pl"
+          "language": ""
         }
       ],
       "detectBrowserLanguage": {
@@ -2177,13 +2177,19 @@ const localeCodes =  [
   "pl"
 ];
 const localeLoaders = {
-  pl: []
+  pl: [
+    {
+      key: "locale_pl_46json_79bd0fb4",
+      load: () => Promise.resolve().then(function () { return pl$1; }),
+      cache: true
+    }
+  ]
 };
 const vueI18nConfigs = [];
 const normalizedLocales = [
   {
     code: "pl",
-    language: "pl"
+    language: undefined
   }
 ];
 
@@ -2676,7 +2682,7 @@ const _HqIVKGCbNQAa4cHjItuirGVV40DE85fDH10wj_s9c = defineNitroPlugin(async (nitr
     const localeSegment = detector.route(event.path);
     const pathLocale = isSupportedLocale(localeSegment) && localeSegment || void 0;
     const path = (pathLocale && url.pathname.slice(pathLocale.length + 1)) ?? url.pathname;
-    if (!url.pathname.includes("/_i18n/oYj3oa-2") && !isExistingNuxtRoute(path)) {
+    if (!url.pathname.includes("/_i18n/rnuTdoFF") && !isExistingNuxtRoute(path)) {
       return;
     }
     const resolved = resolveRedirectPath(event, path, pathLocale, ctx.vueI18nOptions.defaultLocale, detector);
@@ -3594,6 +3600,99 @@ const template$1 = (messages) => {
 const error500 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   template: template$1
+}, Symbol.toStringTag, { value: 'Module' }));
+
+var common = {
+	back: "← Powrót",
+	loading: "Ładowanie...",
+	all: "Wszystkie"
+};
+var meta = {
+	title: "Biblioteka ABE",
+	description: "Katalog książek z Wolne Lektury"
+};
+var nav = {
+	home: "Strona Główna",
+	products: "Katalog książek",
+	productDetails: "Szczegóły książki"
+};
+var banner = {
+	title: "Witam w mojej bibliotece!",
+	text: "Wszystkie dane o książkach pochodzą z serwisu",
+	source: "WolneLektury.pl",
+	description: "Dzięki uprzejmości twórców API, mogę stworzyć swój katalog książek w celach szkoleniowych. Aplikacja, którą właśnie wyświetlasz jest moim pierwszym projektem w Vue.js.",
+	cta: "Przeglądaj książki"
+};
+var products = {
+	popular: {
+		title: "Popularne lektury"
+	},
+	listing: {
+		empty: "Brak książek w wybranej kategorii.",
+		error: "Błąd ładowania produktów"
+	},
+	filters: {
+		author: "Autor",
+		epoch: "Epoka",
+		genre: "Gatunek",
+		kind: "Rodzaj"
+	},
+	pagination: {
+		previous: "Poprzednia",
+		next: "Następna",
+		pageInfo: "Strona {page} z {total}"
+	},
+	box: {
+		viewDetails: "Zobacz szczegóły"
+	}
+};
+var productCard = {
+	descriptionTitle: "Opis lektury",
+	readBook: "Przeczytaj książkę",
+	listenAudiobook: "Posłuchaj audiobooka",
+	notFound: "Książka nie została znaleziona",
+	backToList: "Powrót do listy książek"
+};
+var downloadModal = {
+	title: "Wybierz format pobierania",
+	audiobookTitle: "Wybierz format audiobooka",
+	book: "Książka:",
+	download: "Pobierz {format}",
+	noFormats: "Brak dostępnych formatów do pobrania.",
+	back: "← Wróć",
+	selectFile: "Wybierz plik do pobrania:",
+	format: "Format: {format}"
+};
+var attribution = {
+	source: "Źródło:",
+	sourceText: "Książka pochodzi z serwisu",
+	license: "Licencja:",
+	narrator: "Lektor:",
+	director: "Reżyser:",
+	wolneLektury: "Wolne Lektury"
+};
+const pl = {
+	common: common,
+	meta: meta,
+	nav: nav,
+	banner: banner,
+	products: products,
+	productCard: productCard,
+	downloadModal: downloadModal,
+	attribution: attribution
+};
+
+const pl$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  attribution: attribution,
+  banner: banner,
+  common: common,
+  default: pl,
+  downloadModal: downloadModal,
+  meta: meta,
+  nav: nav,
+  productCard: productCard,
+  products: products
 }, Symbol.toStringTag, { value: 'Module' }));
 
 const template = "";

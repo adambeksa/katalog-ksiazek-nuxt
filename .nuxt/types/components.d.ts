@@ -16,18 +16,21 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   'BannerMainBanner': typeof import("../../app/components/banner/MainBanner/MainBanner.vue").default
   'ProductDownloadModal': typeof import("../../app/components/product/DownloadModal/DownloadModal.vue").default
+  'ProductHomeView': typeof import("../../app/components/product/HomeView/HomeView.vue").default
+  'ProductHomeViewSkeleton': typeof import("../../app/components/product/HomeView/HomeViewSkeleton.vue").default
   'ProductPopularProducts': typeof import("../../app/components/product/PopularProducts/PopularProducts.vue").default
   'ProductPopularProductsSkeleton': typeof import("../../app/components/product/PopularProducts/PopularProductsSkeleton.vue").default
   'ProductProductAttribution': typeof import("../../app/components/product/ProductAttribution/ProductAttribution.vue").default
   'ProductProductBox': typeof import("../../app/components/product/ProductBox/ProductBox.vue").default
   'ProductProductBoxSkeleton': typeof import("../../app/components/product/ProductBox/ProductBoxSkeleton.vue").default
+  'ProductProductDetails': typeof import("../../app/components/product/ProductDetails/ProductDetails.vue").default
+  'ProductProductDetailsSkeleton': typeof import("../../app/components/product/ProductDetails/ProductDetailsSkeleton.vue").default
   'ProductProductFiltersFilterSelect': typeof import("../../app/components/product/ProductFilters/FilterSelect.vue").default
   'ProductProductFilters': typeof import("../../app/components/product/ProductFilters/ProductFilters.vue").default
   'ProductProductFiltersSkeleton': typeof import("../../app/components/product/ProductFilters/ProductFiltersSkeleton.vue").default
+  'ProductProductListing': typeof import("../../app/components/product/ProductListing/ProductListing.vue").default
+  'ProductProductListingSkeleton': typeof import("../../app/components/product/ProductListing/ProductListingSkeleton.vue").default
   'ProductProductNotFound': typeof import("../../app/components/product/ProductNotFound/ProductNotFound.vue").default
-  'ProductSkeletonsHomePageSkeleton': typeof import("../../app/components/product/skeletons/HomePageSkeleton.vue").default
-  'ProductSkeletonsProductCardSkeleton': typeof import("../../app/components/product/skeletons/ProductCardSkeleton.vue").default
-  'ProductSkeletonsProductListingSkeleton': typeof import("../../app/components/product/skeletons/ProductListingSkeleton.vue").default
   'SharedBreadcrumbs': typeof import("../../app/components/shared/Breadcrumbs/Breadcrumbs.vue").default
   'SharedFooter': typeof import("../../app/components/shared/Footer/Footer.vue").default
   'SharedHeader': typeof import("../../app/components/shared/Header/Header.vue").default
@@ -60,18 +63,21 @@ interface _GlobalComponents {
   'NuxtIsland': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island").default
   'LazyBannerMainBanner': LazyComponent<typeof import("../../app/components/banner/MainBanner/MainBanner.vue").default>
   'LazyProductDownloadModal': LazyComponent<typeof import("../../app/components/product/DownloadModal/DownloadModal.vue").default>
+  'LazyProductHomeView': LazyComponent<typeof import("../../app/components/product/HomeView/HomeView.vue").default>
+  'LazyProductHomeViewSkeleton': LazyComponent<typeof import("../../app/components/product/HomeView/HomeViewSkeleton.vue").default>
   'LazyProductPopularProducts': LazyComponent<typeof import("../../app/components/product/PopularProducts/PopularProducts.vue").default>
   'LazyProductPopularProductsSkeleton': LazyComponent<typeof import("../../app/components/product/PopularProducts/PopularProductsSkeleton.vue").default>
   'LazyProductProductAttribution': LazyComponent<typeof import("../../app/components/product/ProductAttribution/ProductAttribution.vue").default>
   'LazyProductProductBox': LazyComponent<typeof import("../../app/components/product/ProductBox/ProductBox.vue").default>
   'LazyProductProductBoxSkeleton': LazyComponent<typeof import("../../app/components/product/ProductBox/ProductBoxSkeleton.vue").default>
+  'LazyProductProductDetails': LazyComponent<typeof import("../../app/components/product/ProductDetails/ProductDetails.vue").default>
+  'LazyProductProductDetailsSkeleton': LazyComponent<typeof import("../../app/components/product/ProductDetails/ProductDetailsSkeleton.vue").default>
   'LazyProductProductFiltersFilterSelect': LazyComponent<typeof import("../../app/components/product/ProductFilters/FilterSelect.vue").default>
   'LazyProductProductFilters': LazyComponent<typeof import("../../app/components/product/ProductFilters/ProductFilters.vue").default>
   'LazyProductProductFiltersSkeleton': LazyComponent<typeof import("../../app/components/product/ProductFilters/ProductFiltersSkeleton.vue").default>
+  'LazyProductProductListing': LazyComponent<typeof import("../../app/components/product/ProductListing/ProductListing.vue").default>
+  'LazyProductProductListingSkeleton': LazyComponent<typeof import("../../app/components/product/ProductListing/ProductListingSkeleton.vue").default>
   'LazyProductProductNotFound': LazyComponent<typeof import("../../app/components/product/ProductNotFound/ProductNotFound.vue").default>
-  'LazyProductSkeletonsHomePageSkeleton': LazyComponent<typeof import("../../app/components/product/skeletons/HomePageSkeleton.vue").default>
-  'LazyProductSkeletonsProductCardSkeleton': LazyComponent<typeof import("../../app/components/product/skeletons/ProductCardSkeleton.vue").default>
-  'LazyProductSkeletonsProductListingSkeleton': LazyComponent<typeof import("../../app/components/product/skeletons/ProductListingSkeleton.vue").default>
   'LazySharedBreadcrumbs': LazyComponent<typeof import("../../app/components/shared/Breadcrumbs/Breadcrumbs.vue").default>
   'LazySharedFooter': LazyComponent<typeof import("../../app/components/shared/Footer/Footer.vue").default>
   'LazySharedHeader': LazyComponent<typeof import("../../app/components/shared/Header/Header.vue").default>
