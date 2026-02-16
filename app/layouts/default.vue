@@ -28,10 +28,8 @@ import Navigation from '~/components/shared/Navigation/Navigation.vue';
 
   &__content {
     flex: 1;
-    padding-top: $spacing-xl; // Assuming variable exists, relying on global injection
-    width: 100%;
-    margin: 0 auto;
-    max-width: $container-max-width;
+    @include container;
+
   }
 }
 </style>
