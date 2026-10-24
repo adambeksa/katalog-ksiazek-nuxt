@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     '~/assets/css/globals.scss',
   ],
   modules: ['@pinia/nuxt', '@nuxtjs/i18n'],
+  routeRules: {
+    // Pliki XML Wolnych Lektur nie mają CORS - przeglądarka pobiera je przez to proxy
+    '/wl-xml/**': { proxy: 'https://wolnelektury.pl/media/book/xml/**' },
+  },
   i18n: {
     defaultLocale: 'pl',
     langDir: '../app/assets/translations',
