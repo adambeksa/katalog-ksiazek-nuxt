@@ -6,6 +6,7 @@ import type { IProductFilters } from '#shared/product/domain/interfaces/IProduct
 import ProductBox from '~/components/product/ProductBox/ProductBox.vue';
 import ProductFilters from '~/components/product/ProductFilters/ProductFilters.vue';
 import ProductListingSkeleton from './ProductListingSkeleton.vue';
+import ProductListingHead from './ProductListingHead.vue';
 import Breadcrumbs from '~/components/shared/Breadcrumbs/Breadcrumbs.vue';
 
 const { t } = useI18n();
@@ -18,7 +19,8 @@ const {
   filters, 
   filterOptions, 
   page, 
-  totalPages 
+  totalPages,
+  itemsPerPage
 } = storeToRefs(filterStore);
 
 onMounted(() => {
@@ -54,7 +56,11 @@ const nextPage = () => {
         @filter-change="handleFilterChange"
       />
 
-      <div class="product-listing__grid">
+      <ProductListingHead />
+      <div
+        class="product-listing__grid"
+        :style="{ counterReset: `book ${(page - 1) * itemsPerPage}` }"
+      >
         <ProductBox
           v-for="product in products"
           :key="product.id"
